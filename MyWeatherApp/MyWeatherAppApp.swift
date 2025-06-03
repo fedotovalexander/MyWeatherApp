@@ -24,6 +24,8 @@ struct MyWeatherAppApp: App {
     }()
 
     var body: some Scene {
+        @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+        
         WindowGroup {
             ContentView()
         }
